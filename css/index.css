@@ -71,28 +71,32 @@ p {
     margin: 0 auto;
 }
 
-#header{
+#nav-bar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-end;
+    justify-content: space-around;
     width: 100%;
     margin: 0 auto;
 }
 
-#nav-bar{
-    display:flex;
-    justify-content: space-evenly;
-    padding: 10px;
+#nav-bar a{
+    text-decoration: none;
+    color: black;
 }
 
-nav .top-nav{
-    display: flex;
-    justify-items: space-around;
-    justify-content: space-evenly;
-    text-decoration: none;
-    list-style: none;
-    margin: 0 5px;
+#nav-bar .top-nav:hover {
+    animation-name: fill;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
 }
+
+@keyframes fill{
+    from {background-color: white;}
+    to {background-color: blue;}
+}
+
 
 .top-content {
     display: flex;
@@ -208,6 +212,7 @@ footer nav a {
     text-decoration: none;
 }
 
+/*code for 2nd page - About.html*/
 .top-img{
     padding: 15px;
     display:flex;
@@ -217,30 +222,43 @@ footer nav a {
 
 .header2{
     padding: 18px;
+    border-bottom: 1px dotted black;
 }
 
 
-.body-box{
+.aboutboxes{
     display: flex;
-	flex-wrap: wrap;
-	padding: 25px 0px;
-    justify-content: space-between;
+    flex-wrap: wrap;
+	padding: 20px 10px;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 .aboutpics{
-    width: 50%;
-    height: 400px;
+    width: 365px;
+    height: 300px;
+    margin-top: 20px;
 }
 
 .learn-more{
     background: white;
     color: black;
     border: 1px solid black;
+    border-radius: 8px;
+	padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.learn-more button{
-    
-}
-.body-box p{
+.body-box {
     width: 50%;
+    border-bottom: 1px dotted black;
+    padding-bottom: 25px;
+    display: inline-block;
+}
+
+.body-box p{
+    padding: 15px 15px 15px 0px;
+    margin-left: 0%;
 }
