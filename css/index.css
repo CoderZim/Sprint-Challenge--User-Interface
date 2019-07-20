@@ -71,12 +71,36 @@ p {
     margin: 0 auto;
 }
 
+#header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nav-bar{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+nav .top-nav{
+    display: flex;
+    justify-items: space-around;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 5px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding: 15px;
 }
 
 .top-content .text-container {
@@ -112,6 +136,45 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(1){
+    background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(2){
+    background-color:gold;
+}
+
+.middle-content .boxes .box:nth-child(3){
+    background-color:cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4){
+    background-color:coral;
+}
+
+.middle-content .boxes .box:nth-child(5){
+    background-color: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6){
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7){
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8){
+    background-color:hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9){
+    background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10){
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -144,3 +207,35 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+.top-img{
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header2{
+    padding: 18px;
+}
+
+.body-box{
+    display: flex;
+	flex-wrap: wrap;
+	padding: 25px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutpics{
+    width: 50%;
+    height: 350px;
+    border-bottom: 4px solid gray;
+}
+
+.learn-more{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
