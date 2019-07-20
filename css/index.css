@@ -219,18 +219,17 @@ footer nav a {
     padding: 18px;
 }
 
+
 .body-box{
     display: flex;
 	flex-wrap: wrap;
 	padding: 25px 0px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .aboutpics{
     width: 50%;
-    height: 350px;
-    border-bottom: 4px solid gray;
+    height: 400px;
 }
 
 .learn-more{
@@ -239,3 +238,9 @@ footer nav a {
     border: 1px solid black;
 }
 
+.learn-more button{
+    
+}
+.body-box p{
+    width: 50%;
+}
